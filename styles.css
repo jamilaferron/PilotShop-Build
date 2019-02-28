@@ -1,0 +1,413 @@
+* {
+	box-sizing: border-box;	
+}
+
+body {
+	font-size: 13px;
+	font-family: 'Ubuntu', sans-serif;
+	letter-spacing: 0.06rem;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Top Nav */
+
+.navTop {
+	background-color: #f8f8f8;
+	color: #B7B7B8;
+	padding: 14px 0 10px 0;
+}
+
+.tel {
+	display: none;
+}
+
+.navTop ul {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+	padding: 0;
+	line-height: 1.5em;
+	vertical-align: top;
+}
+
+.navTop li {
+	display: inline-block;
+	margin-right: 15px;
+	line-height: 22px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.navTop li:hover {
+	color: #589ec2;
+	cursor: pointer;
+}
+
+.basket {
+	float: left;
+	margin-right: 6px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.basket .fas {
+	margin: 0 14px;
+	font-size: 21px;
+	line-height: 20px;
+}
+
+.basket span {
+	margin-left: 5px;
+	padding-right: 19px;
+}
+
+.basket:hover {
+	color: #589ec2;
+	cursor: pointer;
+}
+
+.currency {
+	float: right;
+	height: 25px;
+	padding: 0 20px 0 5px;
+	cursor: pointer;
+}
+
+.currency div {
+	font-weight: bold;
+	line-height: 21px;
+	display: inline-block;
+}
+
+.currency .fas {
+	right: 2px;
+	top: 5px;
+	font-size: 20px;
+	line-height: 12px;
+}
+
+.navTop form {
+	text-align: center;
+	line-height: 45px;
+	margin-top: -5px;
+}
+
+.navTop form input {
+	width: 142px;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	color: #b7b7b8;
+	background-color: transparent;
+	padding: 6px;
+	outline: none;
+}
+
+.navTop form button {
+	font-size: 21px;
+	border: none;
+	color: #b7b7b8;
+	background-color: transparent;
+	padding: 6px;
+	outline: none;
+}
+
+.navTop form .fas:hover {
+	color: #589ec2;
+	cursor: pointer;
+}
+
+/* Bottom Nav */
+
+.logo {
+	text-align: center;
+}
+
+.navBottom {
+	margin: 30px 0;
+}
+
+.navBottom .container {
+	padding: 0 15px;
+}
+
+.navBottom ul {
+	display: none;
+}
+
+.pilotShop {
+	height: 50px;
+	display: block;
+	border: 2px solid #000000;
+	padding: 0 30px 0 10px;
+	font-weight: normal;
+	line-height: 49px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+}
+
+.pilotShop .fas {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	line-height: 2.2em;
+	font-size: 21px;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	flex-direction: column;
+	color: #FFFFFF;
+	width: 100%;
+}
+
+.hero {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+
+.heroOverlay {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 150px;
+	margin: 0 auto;
+}
+
+.hero h2 {
+	font-size: 6vw;
+	font-weight: 500;
+	letter-spacing: 12px;
+	/*margin: 0;*/
+}
+
+.hero h3 {
+	font-size: 2vw;
+	font-weight: 500;
+	letter-spacing: 0.8px;
+	margin-top: 20px;
+}
+
+.hero h2, h3, .btns {
+	align-self: center;
+}
+
+.btns {
+	width: 98%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn {
+	/*font-size: 1vw;*/
+	letter-spacing: 0.5px;
+	margin-top: 47px;
+	padding: 18px 21px;
+	border: 2px solid #FFFFFF;
+	font-weight: bold;
+	line-height: 5px;
+	height: 30px;
+}
+
+.btn:hover {
+	background-color: #589ec2;
+	border: 2px solid #589ec2;
+}
+
+.hero .fas {
+	font-size: 9vw;
+}
+
+.heroImg {
+	width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.showcase .text {
+	position: relative;
+	top: -200px;
+}
+
+.featProducts .hidden {
+	display: block;
+}
+
+/*main*/
+main {
+	width: 100%;
+}
+main .heading {
+	text-align: center;
+}
+
+.featProducts {
+	overflow: auto;
+}
+
+.productWrapper {
+	width: 100%;
+	height: 250px;
+}
+
+.productImg {
+	float: left;
+}
+
+.productImg img {
+	width: 120px;
+	height: 198.52px;
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 481px) and (max-width: 991px) {
+
+	.navTop {
+		padding: 14px 0 10px 0;
+	}
+
+	.navTop form {
+		text-align: left;
+		float: right;
+	}
+
+	.currency {
+		float: left;
+	}
+
+	.navTop .container ul {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 992px) and (max-width: 1280px) {
+
+	.navTop .container {
+		margin: 0 16px;
+	}
+
+	.navTop .currency, .basket {
+		display: inline;
+		float: right;
+	}
+
+	.tel {
+		display: inline;
+	}
+
+	.navTop .container form {
+		display: inline;
+		float: right;
+	}
+
+	.navTop ul {
+		float: right;
+		margin-top: 0;
+	}
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*@media (min-width: 768px) and (max-width: 1024px) {*/
+	/*.navTop form {*/
+		/*text-align: left;*/
+	/*}*/
+/*}*/
+
+/*
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+	@media (min-width: 1025px) and (max-width: 1280px) {
+
+		.pilotShop {
+			display: none;
+		}
+
+		.logo {
+			width: 35%;
+			float: left;
+		}
+
+		.logo img{
+			margin-top: 15px;
+			margin-left: 10px;
+			float: left;
+		}
+
+		.navBottom .container {
+			padding: 10px;
+		}
+
+		.container ul {
+			display: inline;
+			float:right;
+		}
+
+		.container li {
+			font-weight: bold;
+			padding: 0 14px;
+			height: 50px;
+			line-height: 45px;
+			position: relative;
+			margin-right: 10px;
+			color: #000000;
+			border: 2px solid #FFFFFF;
+			float: left;
+			font-size: 0.9rem;
+			text-align:right;
+		}
+
+		.container .active {
+			border: 2px solid #000000;
+		}
+
+		.container li:hover {
+			border: 2px solid #000000;
+		}
+
+		.deal {
+			background-color: #e22a2f;
+			color: #FFFFFF;
+			font-size: 0.6rem;
+			font-weight: normal;
+			position: absolute;
+			top: -10px;
+			right: -2px;
+			padding: 0 3px;
+			height: 16px;
+			line-height: 15px;
+		}
+	}
